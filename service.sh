@@ -7,3 +7,12 @@
 MODDIR=${0%/*}
 
 # This script will be executed in late_start service mode
+while [ command -v crond &> /dev/null ]; do
+  sleep 3
+done
+
+while [[ ! -d "/storage/emulated/0/crontab" ]] || [[ ! -d "/sdcard" ]]; do
+  sleep 3
+done
+
+crond -b -c /storage/emulated/0/crontab

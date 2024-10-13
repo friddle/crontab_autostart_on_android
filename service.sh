@@ -13,7 +13,7 @@ while [ command -v crond &> /dev/null ]; do
   sleep 3
 done
 
-while [[ ! -d "/storage/emulated/0/crontab" ]] || [[ ! -d "/sdcard" ]]; do
+while [[ ! -d "/data/crontab/" ]] ; do
   echo "not found crontab file" >> /data/crontab.log
   sleep 3
 done

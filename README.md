@@ -5,7 +5,8 @@ This magisk module will help start crontab on boot. **Busybox required.**
 
 ### Instructions
 * __Install__ the Crontab Autostart on Android Magisk Module
-* __Create__ a new directory with the name `crontab` under `/storage/emulated/0/` or `/sdcard`.
+Deprecated： * __Create__ a new directory with the name `crontab` under `/storage/emulated/0/` or `/sdcard`.
+* * __Create__ a new directory with the name `crontab` under /data/||aka mkdir /data/crontab and touch root
 * __Copy__ or __create__ crontab files into/in the new directory.
 
 ### Note
